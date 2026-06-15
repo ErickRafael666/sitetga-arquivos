@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGA ARQUIVOS - Galeria dos Campeões</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>TGA <span>ARQUIVOS</span></h1>
+    <p>A enciclopédia histórica dos vencedores do The Game Awards</p>
+  </header>
+
+  <main>
+    <section class="filtros-container">
+      <div class="busca-box">
+        <input type="text" id="inputBusca" placeholder="Pesquisar por nome do jogo...">
+      </div>
+
+      <div class="botoes-filtros">
+        <button class="btn-filtro ativo" data-categoria="todos">Todos</button>
+        <button class="btn-filtro" data-categoria="Jogo do Ano">Jogo do Ano (GOTY)</button>
+        <button class="btn-filtro" data-categoria="Melhor RPG">Melhor RPG</button>
+        <button class="btn-filtro" data-categoria="Melhor Jogo de Ação/Aventura">Ação/Aventura</button>
+        <button class="btn-filtro" data-categoria="Melhor Jogo Indie">Melhor Indie</button>
+      </div>
+    </section>
+
+    <section class="grid-jogos" id="gridJogos">
+    </section>
+  </main>
+
+  <div id="modalJogo" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar-modal">&times;</span>
+
+      <div id="modalImagem" class="modal-video-container"></div>
+
+      <div class="modal-texto">
+        <span id="modalCategoria" class="tag-categoria"></span>
+        <h2 id="modalTitulo"></h2>
+        <div id="modalInfo" class="info-extra"></div>
+        <p id="modalSinopse"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 TGA Archive - Desenvolvido para fins de estudo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
